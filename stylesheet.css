@@ -45,12 +45,20 @@ body{
 .nav img{
     display: none;
 }
-@media (min-width:1000px){
+@media (min-width:1350px){
     .nav img{
-        display: flex;
+        display:flex;
         justify-content: center;
         width: 180px;
         height: 180px;
+    }
+}
+@media (max-width:1150px){
+    .nav .navbar{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
     }
 }
 
@@ -240,4 +248,5 @@ body{
 .footer-container p{
     color:white;
 }
+
 
