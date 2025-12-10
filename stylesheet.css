@@ -43,11 +43,17 @@ body{
     border-radius: 15px;
 }
 .nav img{
-    display: flex;
-    justify-content: center;
-    width: 180px;
-    height: 180px;
+    display: none;
 }
+@media (min-width:1000px){
+    .nav img{
+        display: flex;
+        justify-content: center;
+        width: 180px;
+        height: 180px;
+    }
+}
+
 .nav .link-text{
     font-size: 1.2rem;
     text-align: center;
@@ -234,3 +240,4 @@ body{
 .footer-container p{
     color:white;
 }
+
