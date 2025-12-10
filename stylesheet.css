@@ -95,6 +95,17 @@ body{
     }
 
 }
+@media (max-width:395px){
+    .contact-container .text-wrapper h2{
+        font-size: 1rem;
+    }
+    .contact-container span{
+        font-size: 1rem;
+    }
+    .contact-container .email-wrapper h2{
+        font-size: 1rem;
+    }
+}
 .nav .link-text{
     font-size: 1.2rem;
     text-align: center;
@@ -281,3 +292,4 @@ body{
 .footer-container p{
     color:white;
 }
+
