@@ -145,7 +145,7 @@ body{
 }
 .box .information-bar{
     padding: 80px;
-    display: flex; gap: 10rem;
+    display: flex; gap: 8rem;
     flex-direction: row;
     align-items: center;
     justify-content: center;
@@ -281,6 +281,7 @@ body{
 .footer-container p{
     color:white;
 }
+
 
 
 
