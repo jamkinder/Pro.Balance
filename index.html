@@ -6,8 +6,8 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Pro.Balance</title>
-        <link rel='icon' href="static/images/navlogo.png" type='image/x-icon'>
-    <link rel="stylesheet" href="stylesheet.css">
+    <link rel='icon' href="static/images/navlogo.png" type='image/x-icon'>
+    <link rel="stylesheet" href="{{url_for('static', filename='css/stylesheet.css')}}">
 </head>
 <body>
     <section class ="nav">
@@ -24,7 +24,7 @@
             <a href="#contacts-tag" class="item">
                 <span data-text="Contacts" class="link-text">Контакты</span>
             </a>
-               <img src="navlogo.png" alt="pudge" >
+            <img src="{{url_for('static', filename='images/navlogo.png')}}" alt="pudge" >
 
             <a href="#" class="item">
                 <span data-text="Name" class="link-text">Команда Pro.Balance</span>
@@ -47,7 +47,10 @@
     <section class ="organization-information">
         <div class="box">
         <div class ="information-bar">
-            <h1>О компании</h1>
+            <div class = 'title-text'>
+                <h1>О компании</h1>
+            </div>
+
             <div class = 'information-text'>
                  <h4><b>Надежность, проверенная временем:</b> Мы работаем с 2019 года и прошли через все изменения законодательства. Ваш бизнес в безопасности с нами.
                     <br><b>Отработанные процессы:</b> За 7 лет мы отточили все процедуры до автоматизма. Это значит — никаких авралов и просрочек, только системная работа.
@@ -229,8 +232,4 @@
     </div>
 </footer>
 </html>
-
-
-
-
 
