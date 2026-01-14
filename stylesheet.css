@@ -170,7 +170,7 @@ body{
 }
 
 @media (max-width:500px){
-     table.teamtable{
+    table.teamtable{
         line-height: 1;
     }
     table.iksweb{
@@ -483,4 +483,3 @@ table.teamtable th {
     font-size:1.6rem;
     color:orange;
 }
-
