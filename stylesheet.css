@@ -46,6 +46,29 @@ body{
     display: none;
 }
 @media (min-width:1350px){
+    table.iksweb{
+        width: 75%;
+        border-collapse:collapse;
+        border-radius: 15px;
+        border-spacing:0;
+        height: auto;
+        font-size: 1.3rem;
+    }
+    table.iksweb,table.iksweb td, table.iksweb th {
+        border: 2px solid #595959;
+    }
+    table.iksweb td,table.iksweb th {
+        text-align: center;
+        padding: 3px;
+        width: 30px;
+        height: 35px;
+    }
+    table.iksweb th {
+        background: #4e6982;
+        color: #fff;
+
+        font-weight: normal;
+    }
     .box .information-text{
         width: 25%;
     }
@@ -65,6 +88,36 @@ body{
 
 }
 @media (max-width:1350px){
+    table.iksweb{
+        width: 50%;
+        border-collapse:collapse;
+        border-radius: 15px;
+        border-spacing:0;
+        height: auto;
+        font-size: 0.8rem;
+    }
+    table.iksweb,table.iksweb td, table.iksweb th {
+        border: 2px solid #595959;
+    }
+    table.iksweb td,table.iksweb th {
+        text-align: center;
+        padding: 3px;
+        width: 15px;
+        height: 25px;
+    }
+    table.iksweb th {
+        background: #4e6982;
+        color: #fff;
+
+        font-weight: normal;
+    }
+    .services-intro h3{
+        line-height: 1.4;
+    }
+    .benefit-bar h1{
+        padding-left:7%;
+        line-height: 1.4;
+    }
     .box{
         flex-direction: column;
         max-width: 100%;
@@ -117,6 +170,29 @@ body{
 }
 
 @media (max-width:395px){
+    table.iksweb{
+        width: 45%;
+        border-collapse:collapse;
+        border-radius: 15px;
+        border-spacing:0;
+        height: auto;
+        font-size: 0.75rem;
+    }
+    table.iksweb,table.iksweb td, table.iksweb th {
+        border: 2px solid #595959;
+    }
+    table.iksweb td,table.iksweb th {
+        text-align: center;
+        padding: 3px;
+        width: 15px;
+        height: 25px;
+    }
+    table.iksweb th {
+        background: #4e6982;
+        color: #fff;
+
+        font-weight: normal;
+    }
     .box{
         flex-direction: column;
         max-width: 100%;
@@ -357,29 +433,7 @@ table.teamtable th {
     background: #f0faeb;
 }
 
-table.iksweb{
-    width: 75%;
-    border-collapse:collapse;
-    border-radius: 15px;
-    border-spacing:0;
-    height: auto;
-    font-size: 1.3rem;
-}
-table.iksweb,table.iksweb td, table.iksweb th {
-    border: 2px solid #595959;
-}
-table.iksweb td,table.iksweb th {
-    text-align: center;
-    padding: 3px;
-    width: 30px;
-    height: 35px;
-}
-table.iksweb th {
-    background: #4e6982;
-    color: #fff;
 
-    font-weight: normal;
-}
 .advantages-intro h4{
     margin-left: 25%;
     font-size: 1.3rem;
