@@ -169,7 +169,7 @@ body{
 
 }
 
-@media (max-width:430px){
+@media (max-width:500px){
     table.iksweb{
         border-collapse:collapse;
         border-radius: 15px;
