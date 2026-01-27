@@ -217,7 +217,7 @@ header{
         font-weight: normal;
     }
     .services-intro h3{
-        line-height: 1.4;
+        line-height: 1.6;
     }
     .benefit-bar h1{
         padding-left:7%;
@@ -491,15 +491,26 @@ header{
 }
 
 .services-intro{
+    font-family: "Geologica", sans-serif;
+    font-weight: Lighter;
     margin-top:50px;
     border-radius: 15px;
-    line-height: 0.6;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     padding: 10px;
-    background: #f0faeb;
+
+}
+.services-intro h1{
+    font-size: 3rem;
+    color: #ffb257;
+}
+.services-intro h2 b{
+    color: #dda15e;
+}
+.iksweb .blue{
+    background-color: #e9edc9;
 }
 .services-intro h2{
     font-family: "Geologica", sans-serif;
