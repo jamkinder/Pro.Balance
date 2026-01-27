@@ -1,7 +1,17 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 body{
+    background-color:#f5f5f5
 }
+header{
+    border-radius: 20px;
+    background: rgba(255, 255, 255, 0.12);
+    backdrop-filter: blur(3px);
+    -webkit-backdrop-filter: blur(3px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    position: sticky; top: 0;
+}
+
 .nav nav{
+    background-color:transparent;
     display: flex;
     justify-content: center;
     border-radius: 15px;
@@ -9,26 +19,29 @@ body{
 .nav .item{
     position: relative;
     display: inline-block;
-    height: 30px;
+    height: 25px;
     padding: 8px 8px 8px;
-    margin: 27px 25px 15px;
-    background: #FAFAFA;
+    margin: 5px 25px 15px;
     transition: .3s ease-in-out;
     list-style: none;
     text-decoration: none;
     z-index: 2;
-    font-family: 'Poppins', sans-serif;
+    font-family: "Geologica", sans-serif;
     font-weight: 600;
     border: 1px solid black;
+    background: rgba(255, 255, 255, 0.45);
+    backdrop-filter: blur(3px);
+    -webkit-backdrop-filter: blur(3px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
     border-radius: 15px;
 }
 .nav .item:hover{
     transform: translateY(-8px);
     padding: 11px 8px 8px;
 }
-
+.navigation
 .nav .item_button{
-    height: 30px;
+    height: 25px;
     position: relative;
     display: inline-block;
     padding: 7px 7px 7px;
@@ -37,15 +50,30 @@ body{
     list-style: none;
     text-decoration: none;
     z-index: 2;
-    font-family: 'Poppins', sans-serif;
+    font-family: "Geologica", sans-serif;
     font-weight: 600;
     border: 3px solid black;
     border-radius: 15px;
 }
 .nav img{
+    max-height: 75px;
+    max-width: 75px;
     display: none;
 }
 @media (min-width:1350px){
+    .team-bar img{
+        max-height:350px;
+        max-width: 350px;
+    }
+    .services-intro{
+        display:flex;
+        max-width: 75%;
+        margin-left: auto; margin-right: auto;
+    }
+    .advantages-intro .advantages-text{
+        display: flex;
+        max-width: 50%;
+    }
     table.iksweb{
         width: 75%;
         border-collapse:collapse;
@@ -77,17 +105,49 @@ body{
         display: flex; gap: 8rem;
         flex-direction: row;
         align-items: center;
-        justify-content: center;
+        justify-content: left;
     }
     .nav img{
         display:flex;
         justify-content: center;
-        width: 180px;
-        height: 180px;
+        width: 75px;
+        height: 75px;
     }
 
 }
 @media (max-width:1350px){
+    .team-bar img{
+        max-width: 100%;
+    }
+    .advantages-intro .advantages-text{
+        max-width: 75%;
+
+    }
+    .box .information-text{
+        width: 25%;
+    }
+    .box .information-bar{
+        padding: 80px;
+        display: flex; gap: 8rem;
+        flex-direction: row;
+        align-items: center;
+        justify-content: left;
+    }
+    header{
+        border-radius: 20px;
+        background: rgba(255, 255, 255, 0.12);
+        backdrop-filter: blur(3px);
+        -webkit-backdrop-filter: blur(3px);
+        border: 1px solid rgba(255, 255, 255, 0.2);
+        position: relative;
+    }
+    .benefit-content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        max-width: 50%;
+    }
     table.iksweb{
         width: 50%;
         border-collapse:collapse;
@@ -116,28 +176,18 @@ body{
     }
     .benefit-bar h1{
         padding-left:7%;
-        line-height: 1.4;
+
     }
-    .box{
-        flex-direction: column;
-        max-width: 100%;
-    }
-    .box .information-bar .title-text h1{
-        text-align: center;
-    }
-    .box .information-bar{
-        align-items: center;
-        justify-content: center;
-        flex-direction: column;
-    }
+
+
+
+
     .box .information-text{
         width: 50%;
-        padding-left: 35%;
+
     }
     .box h1{
         font-size: 1rem;
-    }
-    .box .information-bar{
     }
 
     .nav .navbar {
@@ -155,6 +205,7 @@ body{
 
     }
     .box .information-bar h1{
+        color: #dda15e;
         font-size: 45px;
     }
     .contact-container .text-wrapper h2{
@@ -168,9 +219,55 @@ body{
     }
 
 }
-
+.tablecontent{
+    color: white;
+    border-radius: 15px;
+    line-height: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    margin-top:50px;
+}
 @media (max-width:500px){
-   table.teamtable{
+    .Services-bar .services-intro h2{
+        max-width: 100%;
+        font-size: 0.85rem;
+    }
+    .intro .about-company{
+        font-size: 0.75rem;
+        max-width: 100%;
+    }
+    .advantages-intro{
+        display:flex;
+        max-width: 75%;
+        margin-left: auto; margin-right: auto;
+    }
+    .benefit-bar .benefit-content{
+        display:flex;
+        margin-left: auto; margin-right: auto;
+        max-width: 85%;
+    }
+    .benefit-content {
+        max-width: 100%;
+    }
+    .advantages-tag{
+        text-align: center;
+    }
+    .advantages-text{
+        text-align: left;
+        display:flex;
+        margin-left: auto; margin-right: auto;
+    }
+
+    .box .information-text{
+        display:flex;
+        width: 75%;
+        margin-left: auto; margin-right: auto;
+    }
+
+    table.teamtable{
         line-height: 1;
     }
     table.team-bar{
@@ -203,7 +300,13 @@ body{
         flex-direction: column;
         max-width: 100%;
     }
+
+    .box .information-bar{
+        align-items: center;
+        justify-content: center;
+    }
     .box .information-bar .title-text h1{
+        color: #dda15e;
         text-align: center;
     }
     .box .information-bar{
@@ -225,7 +328,10 @@ body{
         font-size: 1rem;
     }
 }
-
+.box .information-bar h1{
+    color: #dda15e;
+    font-size: 45px;
+}
 .footer-container{
     border-radius: 15px;
 
@@ -259,24 +365,31 @@ body{
     list-style: none;
     text-decoration: none;
     z-index: 2;
-    font-family: 'Poppins', sans-serif;
+    font-family: "Geologica", sans-serif;
     font-weight: 600;
     border: 3px solid black;
 
 }
 
 .intro{
+    margin-top:35px;
     line-height: 1;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    justify-content: left;
     padding: 10px;
     border-radius: 15px;
-    background: #f0faeb;
+    background: #a3b18a;
 }
 .about-company{
     max-width: 75%;
+}
+.about-company h1{
+    color: white;
+}
+.about-company h1 b{
+    color: #ffb257;
 }
 .intro h1{
     text-align: center;
@@ -288,11 +401,10 @@ body{
 }
 .box{
     border-radius: 15px;
-
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    justify-content: left;
     padding: 10px;
 }
 
@@ -307,7 +419,7 @@ body{
     font-size: 1.3rem;
 }
 .information-text h4{
-    font-family: 'Calibri Light';
+    font-family: "Geologica", sans-serif;
     font-weight: Lighter;
 }
 
@@ -323,13 +435,13 @@ body{
     background: #f0faeb;
 }
 .services-intro h2{
-    font-family: 'Calibri Light';
+    font-family: "Geologica", sans-serif;
     font-weight: Lighter;
     line-height: 1.3;
     max-width: 75%;
 }
 .team-bar{
-    color:white;
+    color: white;
     border-radius: 15px;
     line-height: 0.6;
     display: flex;
@@ -338,18 +450,24 @@ body{
     justify-content: center;
     padding: 10px;
     margin-top:50px;
-    background: #1f3438;
+    background: #a3b18a;
+}
+
+
+.team-bar table{
+    font-family: "Geologica", sans-serif;
 }
 .team-bar h1{
-    font-family: 'Calibri Light';
+    color: #ffb257;
+    font-family: "Geologica", sans-serif;
     font-weight: bold;
     max-width: 50%;
     text-align: center;
     line-height: 1.3;
-    font-size: 2.2rem;
+    font-size: 2.5rem;
 }
 .team-bar h3{
-    font-family: 'Calibri Light';
+    font-family: "Geologica", sans-serif;
     font-weight: bold;
     max-width: 50%;
     text-align: center;
@@ -357,7 +475,7 @@ body{
     font-size: 1.5rem;
 }
 .team-bar h4{
-    font-family: 'Calibri Light';
+    font-family: "Geologica", sans-serif;
     font-weight: normal;
     max-width: 50%;
     text-align: center;
@@ -365,20 +483,21 @@ body{
     font-size: 1.5rem;
 }
 table.teamtable{
-    width: 100%;
-    font-size: 1.3rem;
+
+    font-size: 1.6rem;
     text-align: center;
     border-collapse:collapse;
     border-spacing:0;
-    height: auto;
+    max-width: 100%;
+    
 }
 table.teamtable,table.teamtable td, table.teamtable th {
-    border: 1.5px solid white;
+    border: 1px solid white;
 }
 table.teamtable td,table.teamtable th {
-    padding: 3px;
-    width: 30px;
-    height: 35px;
+    padding: 10px;
+    width: 425px;
+    height: 60px;
 }
 table.teamtable th {
     background: #4e6982;
@@ -386,15 +505,30 @@ table.teamtable th {
     font-weight: normal;
 }
 .benefit-bar{
-    border-radius: 15px;
+
     color:white;
+    border-radius: 15px;
     line-height: 0.6;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     margin-top:50px;
-    background: #1f3438;
+    background: #a3b18a;
+}
+.benefit-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    max-width: 50%;
+}
+.benefit-content h4{
+    line-height: 1.3;
+}
+.benefit-content h1{
+    line-height: 1.1;
+    text-align: center;
 }
 .partners-intro{
     margin-top:50px;
@@ -409,22 +543,25 @@ table.teamtable th {
 
 }
 .partners-intro h4{
-    font-family: 'Calibri Light';
+    font-family: "Geologica", sans-serif;
     font-weight: lighter;
     font-size: 1.5rem;
 }
 .benefit-bar h1{
-    font-size: 2.4rem;
+    color: #ffb257;
+    font-weight: bold;
+    font-size: 2.6rem;
     margin-top: 55px;
 }
 .benefit-bar h4{
-    font-family: 'Calibri Light';
-    font-weight: Lighter;
-    line-height: 1.3;
+    font-family: "Geologica", sans-serif;
+    font-weight: normal;
+
     max-width: 76%;
     font-size: 1.3rem;
 }
 .benefit-bar h4 b{
+    font-size: 1.5rem;
     font-weight: bold;
 }
 .advantages-intro{
@@ -436,16 +573,17 @@ table.teamtable th {
     align-items: center;
     justify-content: center;
     margin-top:50px;
-    background: #f0faeb;
 }
 
 
 .advantages-intro h4{
-    margin-left: 25%;
     font-size: 1.3rem;
-    max-width: 50%;
-    font-family: 'Calibri Light';
+    font-family: "Geologica", sans-serif;
     font-weight: Lighter;
+}
+.advantages-intro h1{
+    color: #dda15e;
+    font-size: 45px;
 }
 .advantages-intro h4 b{
     font-weight: bold;
@@ -468,13 +606,13 @@ table.teamtable th {
     margin-top:50px;
 }
 .contact-container h3{
-    font-family: 'Calibri Light';
+    font-family: "Geologica", sans-serif;
     font-weight: Lighter;
     font-size:1.4rem;
 }
 
 .contact-container h2{
-    font-family: 'Calibri Light';
+    font-family: "Geologica", sans-serif;
     font-weight: Lighter;
     font-size:2.4rem;
 }
@@ -486,4 +624,3 @@ table.teamtable th {
     font-size:1.6rem;
     color:orange;
 }
-
