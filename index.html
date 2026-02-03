@@ -43,7 +43,7 @@
 <header>
     <section class ="nav">
         <nav class = "navbar">
-            <img src="navlogo.png" alt="pudge" >
+            <img src="{{url_for('static', filename='images/navlogo.png')}}" alt="pudge" >
             <a href="#about-company-tag" class="item">
                 <span data-text="About us" class="link-text">О нас</span>
             </a>
@@ -234,16 +234,18 @@
                         <td>Михайлова Светлана Викторовна</td>
                         <td>Журавлева Елена Александровна</td>
                     </tr>
-                    <tr>
-                        <td><img src="photo2.jpg" alt="pudge" ></td>
-                        <td><img src="photo1.jpg" alt="pudge" ></td>
-                    </tr>
                 </table>
+
+                </div>
+                <div class ="team_photos">
+                    <img src="photo2.jpg" alt="pudge" >
+                        <img src="photo1.jpg" alt="pudge" >
                 </div>
                 <h4>Ваше спокойствие — наша профессиональная миссия.
                     <br>Вы занимаетесь бизнесом. Мы — его балансом.
                 </h4>
             </div>
+
             <div class ="services-images"></div>
 
         </section>
@@ -274,6 +276,7 @@
     <div class="footer-container">
         <div class="footer-content">
             <div class="footer-information">
+                <img src="{{url_for('static', filename='images/navlogo.png')}}" alt="pudge" >
             <p>Реквизиты:</p>
             <p>ИНН 583700640831</p>
             <p>КПП</p>
@@ -281,7 +284,6 @@
         <p>г. Пенза, ул. Максима Горького, д.24А оф.501</p>
             </div>
             <div class="footer-links">
-                <img src="{{url_for('static', filename='images/navlogo.png')}}" alt="pudge" >
                 <a href="#about-company-tag" class="item">
                     <span data-text="About us" class="link-text">О нас</span>
                 </a>
@@ -302,6 +304,5 @@
     </div>
 </footer>
 </html>
-
 
 
