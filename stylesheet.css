@@ -72,6 +72,7 @@ header{
     height: 400px;
     max-width: 100%;
 }
+
 @media (max-width: 700px) {
     .team_photos img{
         width: 250px;
@@ -94,6 +95,37 @@ header{
     }
 }
 @media (min-width:1350px){
+    .footer-content .item{
+        text-align: center;
+        height: 20px;
+        padding: 5px 10px 5px;
+        margin: 15px 20px 25px;
+        transition: .3s ease-in-out;
+        list-style: none;
+        text-decoration: none;
+        z-index: 2;
+        font-family: "Geologica", sans-serif;
+        font-weight: 500;
+        border: 1px solid black;
+        background: rgba(255, 255, 255, 0.45);
+        backdrop-filter: blur(3px);
+        -webkit-backdrop-filter: blur(3px);
+        border: 1px solid rgba(255, 255, 255, 0.2);
+        border-radius: 15px;
+    }
+    .contact-container .text-wrapper{
+        width: 50%;
+        margin-right: 75px;
+    }
+    .contact-container{
+
+        line-height: 1;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        margin-top:50px;
+    }
     table.teamtable{
 
         font-size: 1.6rem;
@@ -171,7 +203,43 @@ header{
     }
 
 }
+@media (min-width: 501px) {
+    .information-image img{
+        max-width: 100%;
+    }
+}
 @media (max-width:1350px) {
+    .footer-content .item{
+        text-align: center;
+        height: 35px;
+
+        margin: 10px 5px 10px;
+        transition: .3s ease-in-out;
+        list-style: none;
+        text-decoration: none;
+        z-index: 2;
+        font-family: "Geologica", sans-serif;
+        font-weight: 400;
+        border: 1px solid black;
+        background: rgba(255, 255, 255, 0.45);
+        backdrop-filter: blur(3px);
+        -webkit-backdrop-filter: blur(3px);
+        border: 1px solid rgba(255, 255, 255, 0.2);
+        border-radius: 15px;
+    }
+    .contact-container .text-wrapper{
+        width: 50%;
+        margin-right: 75px;
+    }
+    .contact-container{
+
+        line-height: 1;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        margin-top:50px;
+    }
     table.teamtable{
 
         font-size: 1.6rem;
@@ -205,8 +273,8 @@ header{
         width: 25%;
     }
     .box .information-bar{
-        padding: 80px;
-        display: flex; gap: 8rem;
+        display: flex;
+        gap:4rem;
         flex-direction: row;
         align-items: center;
         justify-content: left;
@@ -309,6 +377,39 @@ header{
     margin-top:50px;
 }
 @media (max-width:500px){
+    .information-image img{
+        max-width: 0%;
+    }
+    .footer-content .item{
+        text-align: center;
+        height: 25px;
+        padding: 5px 10px 5px;
+        margin: 15px 20px 25px;
+        transition: .3s ease-in-out;
+        list-style: none;
+        text-decoration: none;
+        z-index: 2;
+        font-family: "Geologica", sans-serif;
+        font-weight: 500;
+        border: 1px solid black;
+        background: rgba(255, 255, 255, 0.45);
+        backdrop-filter: blur(3px);
+        -webkit-backdrop-filter: blur(3px);
+        border: 1px solid rgba(255, 255, 255, 0.2);
+        border-radius: 15px;
+    }
+    .contact-container{
+
+        line-height: 1;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-top:50px;
+    }
+    .contact-container .text-wrapper{
+        width: 100%;
+    }
     table.teamtable{
 
         font-size: 1rem;
@@ -400,7 +501,9 @@ header{
         flex-direction: column;
         max-width: 100%;
     }
-
+    .information-bar{
+        gap:0;
+    }
     .box .information-bar{
         align-items: center;
         justify-content: center;
@@ -410,6 +513,7 @@ header{
         text-align: center;
     }
     .box .information-bar{
+        gap:0;
         flex-direction: column;
     }
     .box h1{
@@ -521,6 +625,9 @@ header{
     justify-content: center;
     padding: 10px;
 
+}
+.information-bar{
+    gap:8rem;
 }
 .services-intro h1{
     font-size: 3rem;
@@ -675,15 +782,7 @@ table.teamtable th {
     justify-content: center;
     margin-top:50px;
 }
-.contact-container{
 
-    line-height: 1;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    margin-top:50px;
-}
 .contact-container h3{
     font-family: "Geologica", sans-serif;
     font-weight: Lighter;
@@ -695,10 +794,7 @@ table.teamtable th {
     font-weight: Lighter;
     font-size:2.4rem;
 }
-.contact-container .text-wrapper{
-    width: 50%;
-    margin-right: 75px;
-}
+
 .contact-container h6{
     font-size:1.6rem;
     color:orange;
@@ -716,7 +812,6 @@ table.teamtable th {
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: left;
     justify-content: center;
 
 }
@@ -731,24 +826,7 @@ table.teamtable th {
     justify-content: left;
     border-radius: 15px;
 }
-.footer-content .item{
-    text-align: center;
-    height: 20px;
-    padding: 5px 10px 5px;
-    margin: 15px 20px 25px;
-    transition: .3s ease-in-out;
-    list-style: none;
-    text-decoration: none;
-    z-index: 2;
-    font-family: "Geologica", sans-serif;
-    font-weight: 500;
-    border: 1px solid black;
-    background: rgba(255, 255, 255, 0.45);
-    backdrop-filter: blur(3px);
-    -webkit-backdrop-filter: blur(3px);
-    border: 1px solid rgba(255, 255, 255, 0.2);
-    border-radius: 15px;
-}
+
 .footer-content .item:hover{
     transform: translateY(-3px);
     padding: 11px 8px 8px;
@@ -770,9 +848,26 @@ table.teamtable th {
     font-family: "Geologica", sans-serif;
     font-size:1.3rem;
 }
+.offertext{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: "Geologica", sans-serif;
+    font-weight: Lighter;
+    font-size: 1rem;
+}
+.offer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 95%;
+}
+.offer b{
+    text-align: left;
+    font-weight: bold;
 
-
-
+}
 
 
 
