@@ -29,7 +29,6 @@ header{
     z-index: 2;
     font-family: "Geologica", sans-serif;
     font-weight: 600;
-    border: 1px solid black;
     background: rgba(255, 255, 255, 0.45);
     backdrop-filter: blur(3px);
     -webkit-backdrop-filter: blur(3px);
@@ -106,7 +105,6 @@ header{
         z-index: 2;
         font-family: "Geologica", sans-serif;
         font-weight: 500;
-        border: 1px solid black;
         background: rgba(255, 255, 255, 0.45);
         backdrop-filter: blur(3px);
         -webkit-backdrop-filter: blur(3px);
@@ -220,16 +218,11 @@ header{
         z-index: 2;
         font-family: "Geologica", sans-serif;
         font-weight: 400;
-        border: 1px solid black;
         background: rgba(255, 255, 255, 0.45);
         backdrop-filter: blur(3px);
         -webkit-backdrop-filter: blur(3px);
         border: 1px solid rgba(255, 255, 255, 0.2);
         border-radius: 15px;
-    }
-    .contact-container .text-wrapper{
-        width: 50%;
-        margin-right: 75px;
     }
     .contact-container{
 
@@ -391,7 +384,6 @@ header{
         z-index: 2;
         font-family: "Geologica", sans-serif;
         font-weight: 500;
-        border: 1px solid black;
         background: rgba(255, 255, 255, 0.45);
         backdrop-filter: blur(3px);
         -webkit-backdrop-filter: blur(3px);
@@ -584,11 +576,6 @@ header{
 }
 .intro h1{
     text-align: center;
-}
-.intro h7{
-    text-align: center;
-    font-size: 1.6rem;
-    color: darkgray;
 }
 .box{
     border-radius: 15px;
