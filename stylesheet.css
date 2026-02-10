@@ -184,7 +184,7 @@ header{
         font-weight: normal;
     }
     .box .information-text{
-        width: 50%;
+        width: 100%;
     }
     .box .information-bar{
         padding: 80px;
@@ -501,8 +501,10 @@ header{
         justify-content: center;
     }
     .box .information-bar .title-text h1{
+
         color: #dda15e;
         text-align: center;
+
     }
     .box .information-bar{
         gap:0;
@@ -793,7 +795,7 @@ table.teamtable th {
     min-height: 200%;
     max-height: 200%;
     overflow: hidden;
-    background: #009675;
+    background: #004233;
 }
 .footer-content{
     display: flex;
@@ -806,7 +808,7 @@ table.teamtable th {
     color:white;
 }
 
-.footer-content .footer-links{
+.footer-content {
     background-color:transparent;
     display: flex;
     flex-direction: column;
@@ -823,7 +825,7 @@ table.teamtable th {
     max-width: 100px;
     display: flex;
 }
-.footer-links .link-text{
+.footer-content.link-text{
     font-size: 1.2rem;
     text-align: center;
     position: relative;
@@ -860,6 +862,19 @@ table.teamtable th {
 }
 .information{
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
 
+
+}
+.box .information-bar .title-text h1{
+    font-family: "Geologica", sans-serif;
+    color: #dda15e;
+    text-align: center;
+
+}
+.advantages-tag h1{
+    font-family: "Geologica", sans-serif;
+}
+.benefit-content h1{
+    font-family: "Geologica", sans-serif;
 }
