@@ -204,7 +204,7 @@ header{
 
 }
 @media (min-width: 501px) {
-    . img{
+    .information-image img{
         max-width: 100%;
     }
 }
