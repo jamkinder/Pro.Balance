@@ -858,3 +858,8 @@ table.teamtable th {
 .information-image{
     max-width: 75%;
 }
+.information{
+    display: flex;
+    flex-direction: row;
+
+}
