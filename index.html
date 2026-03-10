@@ -10,7 +10,7 @@
     <style>
     @import url('https://fonts.googleapis.com/css2?family=Geologica:wght,CRSV@100..900,0&display=swap');
     </style>
-     <link rel="stylesheet" href="stylesheet.css">
+    <link rel="stylesheet" href="{{url_for('static', filename='css/stylesheet.css')}}">
 </head>
 <svg style="display: none">
     <filter id="displacementFilter">
@@ -43,7 +43,7 @@
 <header>
     <section class ="nav">
         <nav class = "navbar">
-            <img src="navlogo.png" alt="pudge" >
+            <img src="{{url_for('static', filename='images/navlogo.png')}}" alt="pudge" >
             <a href="#about-company-tag" class="item">
                 <span data-text="About us" class="link-text">О нас</span>
             </a>
@@ -79,18 +79,23 @@
     <section class ="organization-information">
         <div class="box">
         <div class ="information-bar">
+            <div class="information">
             <div class = 'title-text'>
                 <h1>О компании</h1>
             </div>
 
             <div class = 'information-text'>
                  <h4><b>Надежность, проверенная временем:</b> Мы работаем с 2019 года и прошли через все изменения законодательства. Ваш бизнес в безопасности с нами.
-                    <br><b>Отработанные процессы:</b> За 7 лет мы отточили все процедуры до автоматизма. Это значит — никаких авралов и просрочек, только системная работа.
-                    <br><b>Мы видели разные кризисы:</b> Экономические колебания, пандемия, санкции. Мы помогли нашим клиентам пережить их с минимальными потерями, и знаем, как работать в нестабильных условиях.
-                    <br><b>История успеха с нашими клиентами:</b> Мы не просто ведем учет, мы растем вместе с вами. Многие из наших первых клиентов до сих пор с нами, их бизнес вырос, и мы справляемся с увеличившейся нагрузкой.</h4>
+                     <br>
+                     <br><b>Отработанные процессы:</b> За 7 лет мы отточили все процедуры до автоматизма. Это значит — никаких авралов и просрочек, только системная работа.
+                     <br>
+                     <br><b>Мы видели разные кризисы:</b> Экономические колебания, пандемия, санкции. Мы помогли нашим клиентам пережить их с минимальными потерями, и знаем, как работать в нестабильных условиях.
+                     <br>
+                     <br><b>История успеха с нашими клиентами:</b> Мы не просто ведем учет, мы растем вместе с вами. Многие из наших первых клиентов до сих пор с нами, их бизнес вырос, и мы справляемся с увеличившейся нагрузкой.</h4>
             </div>
+                </div>
             <div class="information-image">
-               <img src="aboutcompany.jpg" alt="pudge" >
+                <img src="{{url_for('static', filename='images/aboutcompany.jpg')}}" alt="pudge" >
             </div>
         </div>
         </div>
@@ -240,8 +245,8 @@
                 </table>
 
                 </div>
-                <div class ="team_photos"><img src="photo2.jpg" alt="pudge" >
-                    <img src="photo1.jpg" alt="pudge" >
+                <div class ="team_photos"><img src="{{url_for('static', filename='images/photo2.jpg')}}" alt="pudge" >
+                    <img src="{{url_for('static', filename='images/photo1.jpg')}}" alt="pudge" >
                 </div>
                 <h4>Ваше спокойствие — наша профессиональная миссия.
                     <br>Вы занимаетесь бизнесом. Мы — его балансом.
@@ -277,31 +282,17 @@
 <footer>
     <div class="footer-container">
         <div class="footer-content">
-            <div class="footer-information">
+            <div class="footer-image">
                 <img src="{{url_for('static', filename='images/navlogo.png')}}" alt="pudge" >
+            </div>
+            <div class="footer-information">
+
             <p>Реквизиты:</p>
             <p>ИНН 583700640831</p>
             <p>КПП</p>
             <p>ОГРН</p>
         <p>г. Пенза, ул. Максима Горького, д.24А оф.501</p>
-            </div>
-            <div class="footer-links">
-                <a href="#about-company-tag" class="item">
-                    <span data-text="About us" class="link-text">О нас</span>
-                </a>
-                <a href="#services-tag" class="item">
-                    <span data-text="Services" class="link-text">Услуги</span>
-                </a>
-                <a href="#advantages-tag" class="item">
-                    <span data-text="Advantages" class="link-text">Преимущества</span>
-                </a>
-                <a href="#contacts-tag" class="item">
-                    <span data-text="Contacts" class="link-text">Контакты</span>
-                </a>
-                <a href="#team-tag" class="item">
-                    <span data-text="Name" class="link-text">Команда Pro.Balance</span>
-                </a>
-                <a href="/offer" class="item">
+                <a href="/offer" class="item_button">
                     <span data-text="Name" class="link-text">Оферта</span>
                 </a>
             </div>
@@ -309,6 +300,5 @@
     </div>
 </footer>
 </html>
-
 
 
